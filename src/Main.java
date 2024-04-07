@@ -1,6 +1,5 @@
 public class Main {
-    public static void main(String[] args) {
-        exampleRacoon();
+    public static void main(String[] args) {exampleRacoon();
     }
 
     public static void exampleRacoon(){
@@ -16,5 +15,11 @@ public class Main {
         ratel.move();
         ratel.bolt();
         System.out.println("Медоед: "+ratel);
+    }
+    public static void exampleElephant(){
+        Elephant el1 = new Elephant(2000, 300);
+        System.out.println("У нас объявился слон: "+el1);
+        el1.move();
+                System.out.println("У нас есть огромный слон: "+el1);
     }
 }
