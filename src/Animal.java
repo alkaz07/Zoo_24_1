@@ -8,7 +8,7 @@ public abstract class Animal {
     }
 
     public abstract void move();
-    public abstract void swim();
+
 
 
     public Animal(int pawAmount, double weight) {
