@@ -2,7 +2,7 @@ package zoo.reptiles;
 
 import zoo.Animal;
 
-public class Croc extends Animal {
+public class Croc extends Reptile {
     private int agility;
 
     public Croc (double weight) {
