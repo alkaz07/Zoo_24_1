@@ -1,5 +1,9 @@
 package zoo.birds;
-import interface IWalk;
+import
+
+import static java.nio.file.Files.walk;
+
+interface IWalk ;
 
 //Класс, описывающий страуса.
 public class Ostrich extends Bird implements IWalk {
@@ -14,6 +18,7 @@ public class Ostrich extends Bird implements IWalk {
 
     @Override
     public void move() {
+        walk();
         System.out.println("Страусы отлично прыгают и бегают.");
     }
 
