@@ -10,13 +10,13 @@ public class Viper extends Animal {
     }
 
     public String getColor() {
-        color="бурый";
+        color="бурого";
         return color;
     }
 
     public void setColor(String color) {
         this.color = color;
-        color="бурый";
+        color="бурого";
     }
 
     public String getAggressiveness() {
