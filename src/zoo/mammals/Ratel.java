@@ -46,6 +46,6 @@ public class Ratel extends Mammal implements IWalk {
 
     @Override
     public void walk() {
-
+        System.out.println("Медоед ходит вразвалочку");
     }
 }
