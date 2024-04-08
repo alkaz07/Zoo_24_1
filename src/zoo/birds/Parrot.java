@@ -1,3 +1,5 @@
+package zoo.birds;
+
 public class Parrot{
     private String naim;
     private String color;

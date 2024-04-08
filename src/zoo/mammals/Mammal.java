@@ -1,4 +1,8 @@
-public abstract class Mammal extends Animal{
+package zoo.mammals;
+
+import zoo.Animal;
+
+public abstract class Mammal extends Animal {
     public Mammal( double weight) {
         super(4, weight);
     }

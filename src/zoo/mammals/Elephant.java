@@ -1,3 +1,5 @@
+package zoo.mammals;
+
 public class Elephant extends Mammal{
 
     private int power;

@@ -1,3 +1,7 @@
+package zoo.birds;
+
+import zoo.Animal;
+
 abstract public class Bird extends Animal {
     String featherColor;
     // Определяем цвет пернатых.

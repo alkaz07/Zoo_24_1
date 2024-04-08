@@ -1,3 +1,5 @@
+package zoo;
+
 public abstract class Animal {
 
     boolean isAlive = true;

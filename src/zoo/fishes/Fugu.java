@@ -1,3 +1,5 @@
+package zoo.fishes;
+
 public class Fugu extends Fish {
 
 

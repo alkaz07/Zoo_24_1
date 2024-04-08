@@ -1,3 +1,5 @@
+package zoo;
+
 public class Chupacabras extends Animal{
 
     private int hunger; private final int name;
