@@ -1,9 +1,11 @@
 package zoo.birds;
 
 import zoo.IFly;
+import zoo.ISwim;
+import zoo.IWalk;
 import zoo.birds.Bird;
 
-public class Duck extends Bird implements IFly {
+public class Duck extends Bird implements IFly, ISwim, IWalk {
     public Duck(String featherColor, double weight, String scream) {
         super(featherColor, weight, scream);
     }
@@ -36,6 +38,16 @@ public class Duck extends Bird implements IFly {
     @Override
     public String scream() {
         return null;
+    }
+
+    @Override
+    public void swim() {
+
+    }
+
+    @Override
+    public void walk() {
+
     }
 }
 

@@ -1,5 +1,6 @@
 package zoo;
 
+import zoo.birds.Parrot;
 import zoo.birds.Penguin;
 import zoo.fishes.Herring;
 import zoo.mammals.Capybara;
@@ -16,6 +17,17 @@ public class Main {
 //        exampleCroc();
 
         exampleSwimmers();
+        exampleFlyers();
+    }
+
+    private static void exampleFlyers() {
+        IFly[] mas = {
+                new Parrot("красный", 1.5, "попка"," хороший"),
+                new Helicopter("Ка-25")
+        } ;
+
+
+
     }
 
     private static void exampleSwimmers() {

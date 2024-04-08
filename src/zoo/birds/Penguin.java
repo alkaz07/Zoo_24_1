@@ -1,8 +1,9 @@
 package zoo.birds;
 
 import zoo.ISwim;
+import zoo.IWalk;
 
-public class Penguin extends Bird implements ISwim {
+public class Penguin extends Bird implements ISwim, IWalk {
     public Penguin(String name, double weight, String featherColor) {
         super(name, weight, featherColor);
     }
@@ -20,5 +21,10 @@ public class Penguin extends Bird implements ISwim {
     @Override
     public void swim() {
         System.out.println("пингвин очень быстро плавает");
+    }
+
+    @Override
+    public void walk() {
+        System.out.println("пингвины ходят вперевалку");
     }
 }
