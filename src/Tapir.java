@@ -4,7 +4,7 @@ public class Tapir extends Mammal {
         super(weight);
     }
 
-    @Override
+    //@Override
     public void move() {
         tapirMove();
     }

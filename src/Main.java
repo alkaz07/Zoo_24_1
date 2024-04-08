@@ -1,8 +1,12 @@
 public class Main {
-    public static void main(String[] args) {exampleRacoon();
-        examplViper(); exampleCroc();    }
+    public static void main(String[] args) {
+//        exampleRacoon();
+        examplViper();
+//        exampleCroc();
+    }
 
-    public static void exampleRacoon(){
+
+    public static void exampleRacoon() {
         Racoon racoon = new Racoon(4, 9);
         System.out.println("У нас есть енот: "+racoon);
         racoon.move();
@@ -25,7 +29,8 @@ public class Main {
 
 public static void examplViper() {
     Viper vip1 = new Viper(0, 70, ": бурый ", " бесконечно.");
-    System.out.println("Выползает гадюка. " + vip1 + " Вот такая она.");
+    vip1.move();
+    System.out.println(vip1 + " Вот такая она.");
 }
     public static void exampleCroc(){
         Croc croc = new Croc(1000, 7);
@@ -35,4 +40,10 @@ public static void examplViper() {
         System.out.println("У нас Крокодил: "+croc);
     }
 
+    public static void exampleCapybara(){
+        Capybara capybara = new Capybara(30, "бурый", "женский");
+        System.out.println("Появляется : "+capybara.getClass());
+        capybara.move();
+        capybara.eat();
+    }
 }

@@ -10,13 +10,13 @@ public class Viper extends Animal {
     }
 
     public String getColor() {
-        color="бурый";
+        color="бурого";
         return color;
     }
 
     public void setColor(String color) {
         this.color = color;
-        color="бурый";
+        color="бурого";
     }
 
     public String getAggressiveness() {
@@ -35,17 +35,18 @@ public class Viper extends Animal {
         this.aggressiveness = aggressiveness;
     }
 
-    @Override
-    public String toString() {
-        return "Гадюка " +"цвет" + color +
-                "агрессивность" + aggressiveness +
-                ", isAlive=" + isAlive +
-                ", количество ног " + pawAmount +" штук"+
-                ", вес " + weight +"грамм.";
-    }
+
     public void examplViper(){
         Viper vip1=new Viper(this.pawAmount, this.weight, this.color,this.aggressiveness);
         System.out.println("Выползает гадюка "+vip1+" Вот такая она.");
+    }
+    @Override
+    public String toString() {
+        return "Гадюка " + getColor() +" цвета" +
+                ", агрессивность " + getAggressiveness() +
+                ", isAlive=" + isAlive +
+                ", количество ног " + pawAmount +" штук"+
+                ", вес " + weight +"грамм.";
     }
 }
 //TODO
