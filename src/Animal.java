@@ -1,9 +1,15 @@
 public abstract class Animal {
+    protected int finsAmount;
     boolean isAlive = true;
     int pawAmount;
     double weight;
 
+    public Animal(double weight) {
+    }
+
     public abstract void move();
+    public abstract void swim();
+
 
     public Animal(int pawAmount, double weight) {
         this.pawAmount = pawAmount;
