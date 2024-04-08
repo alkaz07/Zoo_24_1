@@ -31,7 +31,9 @@ public class Lark extends Bird implements IFly {
     }
 
     @Override
-    public String scream() {System.out.println("Жаворонки не орут как все, а прекрасно поют");
+    public String scream()
+    {
+        System.out.println("Жаворонки не орут как все, а прекрасно поют");
 
         return null;
     }

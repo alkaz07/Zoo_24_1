@@ -11,6 +11,9 @@ import zoo.mammals.Ratel;
 import zoo.reptiles.Croc;
 import zoo.reptiles.Viper;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 //        exampleRacoon();
@@ -18,6 +21,11 @@ public class Main {
 //        exampleCroc();
         exampleSwimmers();
         exampleFlyers();
+
+        String s;
+        Elephant e;
+        Scanner scanner= new Scanner(System.in);
+
     }
 
     private static void exampleFlyers() {
