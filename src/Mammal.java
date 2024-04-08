@@ -3,4 +3,8 @@ public abstract class Mammal extends Animal{
         super(4, weight);
     }
 
+    public void feedBabies(){
+        System.out.println(this+" кормит детенышей молоком");
+    }
+
 }
