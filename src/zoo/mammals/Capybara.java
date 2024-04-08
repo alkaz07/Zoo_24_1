@@ -43,6 +43,7 @@ public void eat(){
     System.out.println("капибара поела, теперь вес капибары " + this.weight);
 }
 
+
     @Override
     public void walk() {
         System.out.println("капибара медленно идёт");
