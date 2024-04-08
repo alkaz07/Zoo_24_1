@@ -1,4 +1,4 @@
-public class Croc extends Mammal{
+public class Croc extends Animal{
     private int agility;
 
     public Croc (double weight) {

@@ -1,6 +1,6 @@
 public class Chupacabras extends Animal{
 
-    private int hunger; private int name;
+    private int hunger; private final int name;
 
     public Chupacabras(int pawAmount, double weight, int hunger, int name) {
         super(4, weight);
