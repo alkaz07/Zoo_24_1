@@ -1,7 +1,7 @@
 package zoo.fishes;
 
 public class HerringKing extends Fish {
-    private String color; // серебристый с ярко-красным плавником
+    private String color= "серебристый с ярко-красным плавником";
     private double length; // 5-11 метров
 
     public void swim() {
@@ -17,7 +17,6 @@ public class HerringKing extends Fish {
     }
 
     public String getColor() {
-        this.color = "серебристый с ярко-красным плавником";
         return color;
     }
 

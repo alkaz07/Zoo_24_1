@@ -1,8 +1,14 @@
 package zoo.birds;
 
 import zoo.IFly;
+import zoo.IWalk;
 
-public class Parrot extends Bird implements IFly {
+public class Parrot extends Bird implements IFly , IWalk {
+    @Override
+    public void walk() {
+        System.out.println( "ходит вразвалочку");
+    }
+
     private String speech;
 
     public Parrot(String featherColor, double weight, String scream, String speech)
@@ -11,7 +17,9 @@ public class Parrot extends Bird implements IFly {
         this.speech=speech;
     }
 
-    public void repeatSpeech(){}
+    public void repeatSpeech(){
+        // Попугай повторяет слова
+    }
 
     @Override
     public void move() {
@@ -38,3 +46,4 @@ public class Parrot extends Bird implements IFly {
         System.out.println("попугай летит напрямую из "+from+" в "+to);
     }
 }
+
