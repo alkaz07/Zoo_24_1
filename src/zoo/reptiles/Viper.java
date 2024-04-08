@@ -1,8 +1,7 @@
 package zoo.reptiles;
+import zoo.ISwim;
 
-import zoo.Animal;
-
-public class Viper extends Animal {
+public class Viper extends Reptile implements ISwim {
     private String color;
     private String aggressiveness;
 
@@ -12,6 +11,9 @@ public class Viper extends Animal {
     public void move() {
         System.out.println("Гадюка ползёт.");
     }
+    public void swim(){
+        System.out.println("Гадюка плавает по воде высунув голову вверх.");
+    }
 
     public String getColor() {
         color="бурого";
@@ -19,8 +21,7 @@ public class Viper extends Animal {
     }
 
     public void setColor(String color) {
-        this.color = color;
-        color="бурого";
+        this.color = "бурого";
     }
 
     public String getAggressiveness() {
