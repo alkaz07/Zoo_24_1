@@ -1,6 +1,8 @@
 package zoo.mammals;
 
-public class Capybara extends Mammal{
+import zoo.ISwim;
+
+public class Capybara extends Mammal implements ISwim{
 String color;
 String sex;
 String typeOfFood = "травоядное";
@@ -19,7 +21,7 @@ String typeOfFood = "травоядное";
         return sex;
     }
 
-    public String getTypeOfFood() {
+    public String getTypeOfFood()  {
         return typeOfFood;
     }
 
