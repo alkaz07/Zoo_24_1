@@ -1,4 +1,4 @@
-package zoo;
+package zoo.mammals;
 
 import zoo.mammals.Mammal;
 
