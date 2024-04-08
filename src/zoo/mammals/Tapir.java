@@ -1,6 +1,9 @@
 package zoo.mammals;
 
-public class Tapir extends Mammal {
+import zoo.ISwim;
+import zoo.IWalk;
+
+public class Tapir extends Mammal implements ISwim, IWalk {
 
     public Tapir(double weight) {
         super(weight);
@@ -19,6 +22,17 @@ public class Tapir extends Mammal {
 public void makeSound() {
     System.out.println("Тапир очень голоден");
 }
+
+    @Override
+    public void swim() {
+        System.out.println("Тапир очень медлено плывет");
+    }
+
+    @Override
+    public void walk() {
+        System.out.println("Тапир медлено идет");
+
+    }
 }
 
 
