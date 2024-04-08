@@ -1,5 +1,5 @@
 public abstract class Animal {
-    protected int finsAmount;
+
     boolean isAlive = true;
     int pawAmount;
     double weight;
