@@ -1,10 +1,4 @@
-
-
-}public class Main {
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
-    }
-}public class Fox extends Mammal{
+public class Fox extends Mammal{
     private int sly;
 
     public Fox (double weight) {
@@ -17,7 +11,7 @@
     }
 
 
-    public String getSly() {
+    public int getSly() {
         return sly;
     }
 
@@ -42,7 +36,7 @@
     @Override
     public String toString() {
         return "Fox{" +
-                "fox=" + fox +
+                "sly=" + sly +
                 ", isAlive=" + isAlive +
                 ", pawAmount=" + pawAmount +
                 ", weight=" + weight +
