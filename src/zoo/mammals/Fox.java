@@ -1,9 +1,15 @@
 package zoo.mammals;
+package zoo.mammals;
+
+
 
 import zoo.IFly;
-import zoo.mammals.Mammal;
+import zoo.IWalk;
+import zoo.ISwim;
+import zoo.IFisherman;
+import zoo.fishes.Fish;
 
-public class Fox extends Mammal implements IFly {
+
 public class Fox extends Mammal {
     private int sly;
     private String color;
@@ -62,8 +68,7 @@ public class Fox extends Mammal {
                 '}';
     }
 }
-public interface IFly {
-    public class Fox implements IFly, ISwim,IWalk {
+    public class Fox implements IFly, ISwim,IWalk, IFisherman{
         String name;
         public Fox (double weight) {super (weight) String name) {
             this.name=name;
@@ -83,6 +88,7 @@ public interface IFly {
         public void fly(String from, String to) {
             System.out.println("лиса летит из "+from +" в "+to);
         }
+
     }
     void takeOff(String from);
     void land(String to);
@@ -103,4 +109,16 @@ public interface ISwim {
 public interface IWalk {
     //функциональный интерфейс - содержит всего 1 метод
     void walk();
+}
+public interface IFisherman{
+    @Override
+    public double doFishing(Fish fish) {
+        System.out.println(" лиса ловит рыбу ныряя за ней");
+        if (fish.getWeight()<=this.weight * 0,75);
+        return fish.getWeight();
+        else return 0;
+
+    }
+
+    }
 }

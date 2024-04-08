@@ -17,7 +17,9 @@ public class Parrot extends Bird implements IFly , IWalk {
         this.speech=speech;
     }
 
-    public void repeatSpeech(){}
+    public void repeatSpeech(){
+        // Попугай повторяет слова
+    }
 
     @Override
     public void move() {
