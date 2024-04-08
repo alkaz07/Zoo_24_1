@@ -1,12 +1,16 @@
-public class Croc extends Animal{
+package zoo.reptiles;
+
+import zoo.Animal;
+
+public class Croc extends Reptile {
     private int agility;
 
     public Croc (double weight) {
-        super(weight);
+        super(4, weight);
     }
 
     public Croc (double weight, int agility) {
-        super(weight);
+        super(4, weight);
         this.agility= agility;
     }
 

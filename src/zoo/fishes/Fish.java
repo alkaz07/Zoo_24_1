@@ -1,3 +1,7 @@
+package zoo.fishes;
+
+import zoo.Animal;
+
 public abstract class Fish extends Animal {
     public Fish(double weight) {
         super(0,weight);
@@ -6,5 +10,9 @@ public abstract class Fish extends Animal {
         System.out.println("рыба плывет");
     }
 
+    @Override
+    public void move() {
+        swim();
     }
+}
 

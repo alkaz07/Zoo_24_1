@@ -1,11 +1,12 @@
+package zoo;
+
 public abstract class Animal {
 
-    boolean isAlive = true;
-    int pawAmount;
-    double weight;
+    protected boolean isAlive = true;
+    protected int pawAmount;
+    protected double weight;
 
-    public Animal(double weight) {
-    }
+
 
     public abstract void move();
 

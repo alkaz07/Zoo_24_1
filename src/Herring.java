@@ -1,12 +1,3 @@
-public class Herring extends Fish {
-    double size;
+public class Herring extends Fish{
 
-    @Override
-    public void swim() {
-        double speed= Double.parseDouble(50+"км/ч");
-    }
 }
-    /*Высота тела равна примерно 1/5 длины.
-        Длина небольшой головы составляет 20,2—22,8 % длины тела.
-        Диаметр глаз равен 20,8—23,9 % длины головы.
-        Нижняя челюсть выдается вперед, имеются хорошо развитые сошниковые зубы.*/
