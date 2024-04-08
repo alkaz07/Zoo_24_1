@@ -1,5 +1,7 @@
 package zoo;
 
+import zoo.birds.Penguin;
+import zoo.fishes.Herring;
 import zoo.mammals.Capybara;
 import zoo.mammals.Elephant;
 import zoo.mammals.Racoon;
@@ -10,8 +12,22 @@ import zoo.reptiles.Viper;
 public class Main {
     public static void main(String[] args) {
 //        exampleRacoon();
-        examplViper();
+//        examplViper();
 //        exampleCroc();
+
+        exampleSwimmers();
+    }
+
+    private static void exampleSwimmers() {
+
+        ISwim swimmer1 = new Penguin("a", 5, "чб");
+        ISwim swimmer2 = new Herring(10);
+
+        ISwim[] massiv = {swimmer1, swimmer2, new Croc(120, 5)};
+
+        for (ISwim s: massiv  ) {
+            s.swim();
+        }
     }
 
 

@@ -1,8 +1,9 @@
 package zoo.reptiles;
 
 import zoo.Animal;
+import zoo.ISwim;
 
-public class Croc extends Reptile {
+public class Croc extends Reptile implements ISwim {
     private int agility;
 
     public Croc (double weight) {
@@ -39,5 +40,10 @@ public class Croc extends Reptile {
                 ", pawAmount=" + pawAmount +
                 ", weight=" + weight +
                 '}';
+    }
+
+    @Override
+    public void swim() {
+        System.out.println("плывущий крокодил похож на бревно");
     }
 }

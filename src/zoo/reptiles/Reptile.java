@@ -3,12 +3,11 @@ package zoo.reptiles;
 import zoo.Animal;
 
 public class Reptile extends Animal {
-    public Reptile(4,double weight) {
-        super(weight);
+    public Reptile(double weight) {
+        super(4, weight);
     }
     public Reptile(int pawAmount, double weight) {
-        super(pawAmount);
-        super(weight);
+        super(pawAmount, weight);
     }
     @Override
     public void move() {

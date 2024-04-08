@@ -1,17 +1,22 @@
-package zoo;
+package zoo.mammals;
 
 import zoo.mammals.Mammal;
 
 public class Fox extends Mammal {
     private int sly;
+    private String color;
+    private String polar;
 
     public Fox (double weight) {
         super(weight);
     }
 
-    public Fox (double weight, int sly) {
+    public Fox (double weight, int sly, String color, String polar) {
         super(weight);
         this.sly= sly;
+        this.color=color;
+        this.polar=polar;
+        
     }
 
 
@@ -26,6 +31,14 @@ public class Fox extends Mammal {
             sly=10;
         this.sly= sly;
     }
+    public String getColor(){
+
+            return color;}
+
+
+        public String getPolar(){
+            return polar;
+        }
 
     @Override
     public void move() {
