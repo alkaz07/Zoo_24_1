@@ -1,8 +1,9 @@
 package zoo.fishes;
 
 import zoo.Animal;
+import zoo.ISwim;
 
-public abstract class Fish extends Animal {
+public abstract class Fish extends Animal implements ISwim {
     public Fish(double weight) {
         super(0,weight);
     }
