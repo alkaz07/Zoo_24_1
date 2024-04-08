@@ -1,8 +1,8 @@
 public class Main {
     public static void main(String[] args) {
-        exampleRacoon();
+//        exampleRacoon();
         examplViper();
-        exampleCroc();
+//        exampleCroc();
     }
 
 
@@ -29,7 +29,8 @@ public class Main {
 
 public static void examplViper() {
     Viper vip1 = new Viper(0, 70, ": бурый ", " бесконечно.");
-    System.out.println("Выползает гадюка. " + vip1 + " Вот такая она.");
+    vip1.move();
+    System.out.println(vip1 + " Вот такая она.");
 }
     public static void exampleCroc(){
         Croc croc = new Croc(1000, 7);
