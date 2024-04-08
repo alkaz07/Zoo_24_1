@@ -23,7 +23,8 @@ public class Ostrich extends Bird implements IWalk {
     }
 
     @Override
-    public String scream() {
+    public String scream()
+    {
         return "кричит по-страусиному";
     }
 
