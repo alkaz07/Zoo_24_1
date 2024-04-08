@@ -1,9 +1,15 @@
 public abstract class Animal {
+    protected int finsAmount;
     boolean isAlive = true;
     int pawAmount;
     double weight;
 
+    public Animal(double weight) {
+    }
+
     public abstract void move();
+    public abstract void swim();
+
 
     public Animal(int pawAmount, double weight) {
         this.pawAmount = pawAmount;
@@ -44,5 +50,14 @@ public abstract class Animal {
             System.out.println("То что мертво, умереть не может");
 
 
+    }
+
+    @Override
+    public String toString() {
+        return  this.getClass().getName()+ "{" +
+                "isAlive=" + isAlive +
+                ", pawAmount=" + pawAmount +
+                ", weight=" + weight +
+                '}';
     }
 }

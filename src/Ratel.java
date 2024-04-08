@@ -1,41 +1,38 @@
-public class Racoon extends Mammal{
+public class Ratel extends Mammal{
     private int impudence;
 
-    public Racoon(double weight) {
+    public Ratel(double weight) {
         super(weight);
     }
 
-    public Racoon(double weight, int impudence) {
+    public Ratel(double weight, int impudence) {
         super(weight);
         this.impudence = impudence;
     }
 
-
     public int getImpudence() {
+        if (impudence<0)
+            impudence=0;
+        if (impudence>1000)
+            impudence=1000;
         return impudence;
     }
 
     public void setImpudence(int impudence) {
-        if (impudence<0)
-            impudence=0;
-        if (impudence>10)
-            impudence=10;
         this.impudence = impudence;
     }
 
     @Override
     public void move() {
-        run();
+        System.out.println("Медоед не спешит");
     }
-//
-    public void run()
-    {
-        System.out.println("енот бежит");
+    public  void bolt(){
+        System.out.println("Медоед кладёт на всех");
     }
 
     @Override
     public String toString() {
-        return "Racoon{" +
+        return "Ratel{" +
                 "impudence=" + impudence +
                 ", isAlive=" + isAlive +
                 ", pawAmount=" + pawAmount +
