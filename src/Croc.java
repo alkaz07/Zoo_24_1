@@ -2,11 +2,11 @@ public class Croc extends Animal{
     private int agility;
 
     public Croc (double weight) {
-        super(weight);
+        super(4, weight);
     }
 
     public Croc (double weight, int agility) {
-        super(weight);
+        super(4, weight);
         this.agility= agility;
     }
 

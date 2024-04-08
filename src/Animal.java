@@ -4,8 +4,7 @@ public abstract class Animal {
     int pawAmount;
     double weight;
 
-    public Animal(double weight) {
-    }
+
 
     public abstract void move();
 

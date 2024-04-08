@@ -6,5 +6,9 @@ public abstract class Fish extends Animal {
         System.out.println("рыба плывет");
     }
 
+    @Override
+    public void move() {
+        swim();
     }
+}
 
