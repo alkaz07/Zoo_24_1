@@ -1,6 +1,8 @@
 package zoo.fishes;
 
-public class Tang extends Fish {
+import zoo.ISwim;
+
+public class Tang extends Fish implements ISwim {
 
     public Tang(double weight) {
         super(weight);

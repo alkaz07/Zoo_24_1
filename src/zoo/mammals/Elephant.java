@@ -1,6 +1,10 @@
 package zoo.mammals;
 
-public class Elephant extends Mammal{
+import zoo.IFly;
+import zoo.ISwim;
+import zoo.IWalk;
+
+public class Elephant extends Mammal implements ISwim, IWalk {
 
     private int power;
 
@@ -23,4 +27,14 @@ public class Elephant extends Mammal{
     public void logsTakeup(int logs){
                 System.out.println("Слон поднимает бревна в количестве "+logs+" шт");
     }
-  }
+
+    @Override
+    public void swim() {
+        System.out.println("Слон отличный пловец, способен проплыть до 50 км");
+    }
+
+    @Override
+    public void walk() {
+        System.out.println("Слон гуляет сам по себе");
+    }
+}
