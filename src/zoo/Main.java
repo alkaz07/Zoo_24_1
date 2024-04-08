@@ -1,3 +1,12 @@
+package zoo;
+
+import zoo.mammals.Capybara;
+import zoo.mammals.Elephant;
+import zoo.mammals.Racoon;
+import zoo.mammals.Ratel;
+import zoo.reptiles.Croc;
+import zoo.reptiles.Viper;
+
 public class Main {
     public static void main(String[] args) {
 //        exampleRacoon();

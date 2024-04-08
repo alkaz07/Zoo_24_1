@@ -1,3 +1,7 @@
+package zoo.reptiles;
+
+import zoo.Animal;
+
 public class Viper extends Animal {
     private String color;
     private String aggressiveness;

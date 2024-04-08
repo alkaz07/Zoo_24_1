@@ -1,3 +1,5 @@
+package zoo.mammals;
+
 public class Tapir extends Mammal {
 
     public Tapir(double weight) {

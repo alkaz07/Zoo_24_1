@@ -1,3 +1,5 @@
+package zoo.birds;
+
 //Класс, описывающий страуса.
 public class Ostrich extends Bird {
     public Ostrich() {
