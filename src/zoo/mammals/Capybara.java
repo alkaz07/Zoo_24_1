@@ -1,3 +1,5 @@
+package zoo.mammals;
+
 public class Capybara extends Mammal{
 String color;
 String sex;

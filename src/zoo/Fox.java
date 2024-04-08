@@ -1,4 +1,8 @@
-public class Fox extends Mammal{
+package zoo;
+
+import zoo.mammals.Mammal;
+
+public class Fox extends Mammal {
     private int sly;
 
     public Fox (double weight) {
