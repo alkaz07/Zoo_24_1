@@ -17,7 +17,7 @@ public class Main {
 //        examplViper();
 //        exampleCroc();
         exampleSwimmers();
-//        exampleFlyers();
+        exampleFlyers();
     }
 
     private static void exampleFlyers() {
