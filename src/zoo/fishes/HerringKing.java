@@ -5,8 +5,8 @@ public class HerringKing extends Fish {
     private double length; // 5-11 метров
 
     public void swim() {
-        System.out.println("Плавает держа голову кверху и вращая гигантским веслообразным телом.");
-        System.out.println("Жухъ, жухъ, жухъ, жухъ, жухъ, жухъ.");
+        System.out.println("Сельдяной король плывёт держа голову кверху и вращая гигантским веслообразным телом.");
+//        System.out.println("Жухъ, жухъ, жухъ, жухъ, жухъ, жухъ.");
 //        System.out.println("Предпочитает держаться поближе к косякам сельди");
     }
 
@@ -28,9 +28,15 @@ public class HerringKing extends Fish {
     @Override
     public String toString() {
         return "Сельдяной король: " +
-                 getColor()  +
+                getColor() +
                 ", длинна " + length +
                 ", isAlive=" + isAlive +
-                ", вес " + weight ;
+                ", вес " + weight;
+
+    }
+
+    public static void exzHerringKing() {
+        HerringKing hk1 = new HerringKing(200, "", 4);
+        System.out.println(hk1);
     }
 }

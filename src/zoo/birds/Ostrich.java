@@ -1,7 +1,9 @@
 package zoo.birds;
+import interface IWalk;
 
 //Класс, описывающий страуса.
-public class Ostrich extends Bird {
+public class Ostrich extends Bird implements IWalk {
+
     public Ostrich() {
         super("черно-белый");
     }

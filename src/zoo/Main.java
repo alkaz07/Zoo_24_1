@@ -3,6 +3,7 @@ package zoo;
 import zoo.birds.Parrot;
 import zoo.birds.Penguin;
 import zoo.fishes.Herring;
+import zoo.fishes.HerringKing;
 import zoo.mammals.Capybara;
 import zoo.mammals.Elephant;
 import zoo.mammals.Racoon;
@@ -15,7 +16,6 @@ public class Main {
 //        exampleRacoon();
 //        examplViper();
 //        exampleCroc();
-
         exampleSwimmers();
         exampleFlyers();
     }
@@ -34,8 +34,8 @@ public class Main {
 
         ISwim swimmer1 = new Penguin("a", 5, "чб");
         ISwim swimmer2 = new Herring(10);
-
-        ISwim[] massiv = {swimmer1, swimmer2, new Croc(120, 5)};
+        ISwim swimmer23 = new HerringKing(200,"",5);
+        ISwim[] massiv = {swimmer1, swimmer2, new Croc(120, 5), swimmer23};
 
         for (ISwim s: massiv  ) {
             s.swim();
