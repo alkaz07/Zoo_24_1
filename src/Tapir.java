@@ -1,25 +1,20 @@
 public class Tapir extends Mammal {
-    int weight = 150;
-    int paws = 4;
-    String name = "Pusha";
-    void displayInfo(){
-        System.out.println(name);
-    }
 
-    public Tapir(String name, int weight, int paws) {
-        super(name, weight);
-        this.weight = weight;
-        this.paws = paws;
-        this.name = name;
+    public Tapir (double weight){
+        super(weight);
     }
 
     @Override
     public void move() {
+        tapirMove();
+    }
+    public void tapirMove (){
+        System.out.println("Тапир вальяжно движется на 4-х лапах");
 
     }
 
     @Override
     public void makeSound() {
-
+        System.out.println("Тапир очень голоден");
     }
 }
