@@ -1,6 +1,8 @@
 package zoo.mammals;
 
-public class Ratel extends Mammal{
+import zoo.IWalk;
+
+public class Ratel extends Mammal implements IWalk {
     private int impudence;
 
     public Ratel(double weight) {
@@ -40,5 +42,10 @@ public class Ratel extends Mammal{
                 ", pawAmount=" + pawAmount +
                 ", weight=" + weight +
                 '}';
+    }
+
+    @Override
+    public void walk() {
+        System.out.println("Медоед ходит вразвалочку");
     }
 }
