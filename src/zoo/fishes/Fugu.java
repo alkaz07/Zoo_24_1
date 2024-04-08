@@ -22,6 +22,7 @@ public class Fugu extends Fish {
         this.length = length;
     }
 
+
     public void setToxicity(int toxicity) {
         this.toxicity = toxicity;
     }
