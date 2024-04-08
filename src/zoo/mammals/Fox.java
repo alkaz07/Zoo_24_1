@@ -63,9 +63,9 @@ public class Fox extends Mammal {
     }
 }
 public interface IFly {
-    public class Fox implements IFly{
+    public class Fox implements IFly, ISwim,IWalk {
         String name;
-        public Fox (String name) {
+        public Fox (double weight) {super (weight) String name) {
             this.name=name;
         }
 
