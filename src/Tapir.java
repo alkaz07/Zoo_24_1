@@ -13,7 +13,7 @@ public class Tapir extends Mammal {
         System.out.println("Тапир вальяжно движется на 4-х лапах");
 
     }
-    @Override
+    //@Override
 public void makeSound() {
     System.out.println("Тапир очень голоден");
 }
