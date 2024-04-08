@@ -19,6 +19,6 @@ public class Elephant extends Mammal{
         System.out.println("Слон обливается водой");
     }
     public void logsTakeup(int logs){
-                System.out.println("Слон поднимает бревна в количестве "+logs);
+                System.out.println("Слон поднимает бревна в количестве "+logs+" шт");
     }
   }
