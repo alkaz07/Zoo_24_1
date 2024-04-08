@@ -6,6 +6,7 @@ public class HerringKing extends Fish {
 
     public void swim() {
         System.out.println("Плавает держа голову кверху и вращая гигантским веслообразным телом.");
+        System.out.println("Жухъ, жухъ, жухъ, жухъ, жухъ, жухъ.");
 //        System.out.println("Предпочитает держаться поближе к косякам сельди");
     }
 
