@@ -1,6 +1,6 @@
 package zoo;
 
-public class Chupacabras extends Animal{
+public class Chupacabras extends Animal implements IWalk,IFly,ISwim{
 
     private int hunger; private final int name;
 
@@ -36,5 +36,30 @@ public class Chupacabras extends Animal{
                 " весит " + weight +
                 " и очень голодна " + hunger +
                 '}';
+    }
+
+    @Override
+    public void walk() {
+        System.out.println("Чупакабра сгорбившись ходит на ногах");
+    }
+
+    @Override
+    public void takeOff(String from) {
+        System.out.println("Чупакабра прыгает с возвышенности ("+from+")");
+    }
+
+    @Override
+    public void land(String to) {
+        System.out.println("Чупакабра складывает перепонки и падает в "+to);
+    }
+
+    @Override
+    public void fly(String from, String to) {
+        System.out.println("С помощью кожаных перепонок между телом и верхними лапами чупакабра планирует с "+from+ " и снижается в "+to);
+    }
+
+    @Override
+    public void swim() {
+    System.out.println("С помощью перепонок между пальцами чупакабра плавает");
     }
 }
