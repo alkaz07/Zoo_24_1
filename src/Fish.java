@@ -1,10 +1,8 @@
 public abstract class Fish extends Animal {
     public Fish(double weight) {
-        super(weight);
+        super(0,weight);
     }
+    public abstract void swim ();
 
-    public Fish(int pawAmount, double weight) {
-        super(pawAmount, weight);
     }
-}
 
