@@ -51,4 +51,13 @@ public abstract class Animal {
 
 
     }
+
+    @Override
+    public String toString() {
+        return  this.getClass().getName()+ "{" +
+                "isAlive=" + isAlive +
+                ", pawAmount=" + pawAmount +
+                ", weight=" + weight +
+                '}';
+    }
 }

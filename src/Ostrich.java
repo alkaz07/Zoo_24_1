@@ -18,7 +18,7 @@ public class Ostrich extends Bird {
         return "кричит по-страусиному";
     }
 
-    @Override
+   // @Override
     public void jump() {
         System.out.println("Страусы очень хорошо прыгают");
     }
