@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {exampleRacoon();
-    }
+        examplViper();    }
 
     public static void exampleRacoon(){
         Racoon racoon = new Racoon(4, 9);
@@ -22,4 +22,8 @@ public class Main {
         el1.move();
                 System.out.println("У нас есть огромный слон: "+el1);
     }
-}
+
+public static void examplViper() {
+    Viper vip1 = new Viper(0, 70, ": бурый ", " бесконечно.");
+    System.out.println("Выползает гадюка. " + vip1 + " Вот такая она.");
+}}
